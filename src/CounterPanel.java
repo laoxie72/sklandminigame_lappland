@@ -30,6 +30,6 @@ public class CounterPanel extends JPanel {
     }
 
     private void updateLabel() {
-        countLabel.setText("黑色格子数量: " + blackCount);
+        countLabel.setText("灰色格子数量: " + blackCount);
     }
 }

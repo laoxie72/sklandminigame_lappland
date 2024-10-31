@@ -22,7 +22,7 @@ public class GridPanel extends JPanel {
             for (int j = 0; j < 5; j++) {
                 JPanel panel = new JPanel();
                 panel.setBackground(Color.WHITE);
-                panel.setBorder(new LineBorder(Color.BLACK, 1));
+                panel.setBorder(new LineBorder(Color.BLACK, 2));
                 add(panel);
                 panels[i][j] = panel;
 
@@ -38,7 +38,7 @@ public class GridPanel extends JPanel {
 
     private void togglePanelColor(JPanel panel) {
         if (panel.getBackground() == Color.WHITE) {
-            panel.setBackground(Color.BLACK);
+            panel.setBackground(Color.GRAY);
             counterPanel.increment();
         } else {
             panel.setBackground(Color.WHITE);
